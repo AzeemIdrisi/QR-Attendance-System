@@ -1,63 +1,89 @@
 /* Reset some default styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Define some basic styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
 header h1 {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 100px);
+  display: flex;
+  gap: 2em;
+  justify-content: space-around;
+  align-items: center;
+  height: calc(100vh - 100px);
 }
 
 .attendance-container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 30em;
+  height: 80%;
+}
+.marked-list {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 30em;
+  height: 80%;
 }
 
 .attendance-card h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .attendance-card img {
-    width: 200px;
-    height: 200px;
-    margin: 20px auto;
-    display: block;
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  display: block;
 }
 
 .hint {
-    font-size: 16px;
-    color: #666;
+  font-size: 16px;
+  color: #666;
 }
 
+.present-list {
+  margin: 2em;
+}
+li {
+  margin: 2%;
+  list-style: decimal;
+  background-color: rgb(33, 160, 160);
+  color: white;
+}
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+button {
+  margin: 10%;
+  padding: 2%;
+  border-radius: 5px;
 }
