@@ -39,7 +39,7 @@ def add_manually_post():
     if selected_student:
         students.append({"id": len(students) + 1, "name": selected_student})
 
-    return redirect("/add_manually")  # Redirect back to the "Add Manually" page after submission
+    return redirect("/")  # Redirect back to the "Home page after submission
 
 
 if __name__ == "__main__":
