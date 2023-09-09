@@ -3,7 +3,7 @@ import time
 from PIL import Image
 
 
-link = "https://example.com"
+link = "www.google.com"
 
 # Function to generate and display a QR code
 def generate_qr_code(link):
