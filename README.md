@@ -40,22 +40,22 @@ Before you begin, ensure you have the following prerequisites installed:
 
 1. **Clone the Repository:**
 
-   ```bash
-   git clone link
+   ```
+   git clone https://github.com/AzeemIdrisi/QR-Attendance-System
    ```
 
 2. **Navigate to the Project Directory:**
 
-   ```bash
-   cd path
+   ```
+   cd QR-Attendance-System
    ```
 
 
 
 4. **Run the Flask App:**
 
-   ```bash
-   python app.py
+   ```
+   python3 app.py
    ```
 
 5. **Access the System:**

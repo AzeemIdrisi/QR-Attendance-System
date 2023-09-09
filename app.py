@@ -26,7 +26,7 @@ def qrgenerator():
         img = qr.make_image(fill_color="black", back_color="white")
 
         # Display the QR code image
-        img.save("Flask/static/qrcode.png")
+        img.save("static/qrcode.png")
 
     # Generate and display QR codes every 5 seconds
 
