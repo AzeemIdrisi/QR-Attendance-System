@@ -28,7 +28,7 @@ main {
   gap: 2em;
   justify-content: space-around;
   align-items: center;
-  height: calc(100vh - 100px);
+  height: 100vh;
 }
 
 .attendance-container {
@@ -150,4 +150,14 @@ button {
   font-weight: bold;
   font-size: 16px;
   margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+  main {
+    flex-direction: column;
+  }
+}
+
+.attendance-card-submitted {
+  padding: 20px;
 }

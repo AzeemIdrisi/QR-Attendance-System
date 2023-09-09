@@ -1,9 +1,13 @@
 import qrcode
-import time
-from PIL import Image
+import socket
 
+def get_ip_address():
+    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    s.connect(("8.8.8.8", 80))
+    return s.getsockname()[0]
 
-link = "http://127.0.0.1:3000/index1.html"
+ip = get_ip_address()
+link = f"http://{ip}:5000/index1.html"
 
 # Function to generate and display a QR code
 def generate_qr_code(link):
@@ -19,12 +23,9 @@ def generate_qr_code(link):
     img = qr.make_image(fill_color="black", back_color="white")
 
     # Display the QR code image
-    img.save("qrcode.png")
+    img.save("Flask/static/qrcode.png")
 
 # Generate and display QR codes every 5 seconds
-try:
-    while True:
-        generate_qr_code(link)
-        time.sleep(1)
-except KeyboardInterrupt:
-    print("QR code generation stopped.")
+
+generate_qr_code(link)
+

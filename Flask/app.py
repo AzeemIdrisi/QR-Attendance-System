@@ -1,4 +1,37 @@
 from flask import Flask, render_template, request, redirect, url_for
+import qrcode
+import socket
+
+def qrgenerator():
+
+    def get_ip_address():
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        s.connect(("8.8.8.8", 80))
+        return s.getsockname()[0]
+
+    ip = get_ip_address()
+    link = f"http://{ip}:5000/add_manually"
+
+    # Function to generate and display a QR code
+    def generate_qr_code(link):
+        qr = qrcode.QRCode(
+            version=1,
+            error_correction=qrcode.constants.ERROR_CORRECT_L,
+            box_size=10,
+            border=4,
+        )
+        qr.add_data(link)
+        qr.make(fit=True)
+
+        img = qr.make_image(fill_color="black", back_color="white")
+
+        # Display the QR code image
+        img.save("Flask/static/qrcode.png")
+
+    # Generate and display QR codes every 5 seconds
+
+    generate_qr_code(link)
+
 
 app = Flask(__name__)
 
@@ -29,6 +62,10 @@ def index():
 def add_manually():
     return render_template("index1.html")
 
+@app.route("/submitted", methods=["GET"])
+def submitted():
+    return render_template("submitted.html")
+
 # Route to handle form submissions (POST request)
 @app.route("/add_manually_post", methods=["POST"])
 def add_manually_post():
@@ -39,8 +76,8 @@ def add_manually_post():
     if selected_student:
         students.append({"id": len(students) + 1, "name": selected_student})
 
-    return redirect("/")  # Redirect back to the "Home page after submission
-
+    return redirect("/submitted")  # Redirect back to the "Home page after submission
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    qrgenerator()
+    app.run(host='0.0.0.0',port=5000,debug=True)
