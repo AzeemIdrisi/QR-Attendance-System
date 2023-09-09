@@ -3,10 +3,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} 
+}
 
 /* Define some basic styles */
- body {
+body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
   color: #333;
@@ -41,6 +41,8 @@ main {
   height: 80%;
 }
 .marked-list {
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -71,9 +73,6 @@ main {
   margin: 2em;
 }
 
-
-
-
 /* Add custom scrollbar styles to the form */
 .attendance-form {
   max-height: 300px; /* Set a maximum height for the form */
@@ -88,7 +87,7 @@ main {
 }
 
 .attendance-form::-webkit-scrollbar-thumb {
-  background-color: #007BFF; /* Set the thumb color */
+  background-color: #007bff; /* Set the thumb color */
 }
 
 .attendance-form::-webkit-scrollbar-track {
@@ -135,9 +134,6 @@ main {
   color: #1d7ff0;
 }
 
-
-
-
 footer {
   background-color: #0056b3;
   color: #fff;
@@ -154,11 +150,4 @@ button {
   font-weight: bold;
   font-size: 16px;
   margin-top: 20px;
-} 
-
-
-
-
-
-
-
+}
