@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: #0056b3;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -73,17 +73,23 @@ main {
 li {
   margin: 2%;
   list-style: decimal;
-  background-color: rgb(33, 160, 160);
-  color: white;
+  background-color: #fff200;
+  color: rgb(0, 0, 0);
 }
 footer {
-  background-color: #333;
+  background-color: #0056b3;
   color: #fff;
   text-align: center;
   padding: 10px;
 }
 button {
-  margin: 10%;
-  padding: 2%;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
   border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 20px;
 }
