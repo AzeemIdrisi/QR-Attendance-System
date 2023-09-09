@@ -1,64 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QR Attendance System</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <h1>Inderprastha Engineering College</h1>
-        <h2>Attendance Portal</h2>
+      <h1>Inderprastha Engineering College</h1>
+      <h2>Attendance Portal</h2>
     </header>
     <main>
-        <div class="marked-list">
-            <h2>Present Count : 4 </h2>
-            <h3 class="present-list">Present Students</h3>
-           
-           
-            <form class="attendance-form">
-                <ul class="student-list">
-                    <li class="student">
-                        <label class="student-label">
-                            <span class="student-name">Student 1</span>
-                            <button type="button" class="delete-button"><i class="fas fa-trash-alt"></i></button>
-                        </label>
-                    </li>
-                    <li class="student">
-                        <label class="student-label">
-                            <span class="student-name">Student 2</span>
-                            <button type="button" class="delete-button"><i class="fas fa-trash-alt"></i></button>
-                        </label>
-                    </li>
-                    <li class="student">
-                        <label class="student-label">
-                            <span class="student-name">Student 3</span>
-                            <button type="button" class="delete-button"><i class="fas fa-trash-alt"></i></button>
-                        </label>
-                    </li>
-                    <!-- Add more students as needed -->
-                </ul>
-            </form>
-            
+      <div class="marked-list">
+        <h2>Present Count : 4</h2>
+        <h3 class="present-list">Present Students</h3>
 
+        <form class="attendance-form">
+          <ul class="student-list">
+            <li class="student">
+              <label class="student-label">
+                <span class="student-name">Student 1</span>
+                <button type="button" class="delete-button">
+                  <i class="fas fa-trash-alt"></i>
+                </button>
+              </label>
+            </li>
+            <li class="student">
+              <label class="student-label">
+                <span class="student-name">Student 2</span>
+                <button type="button" class="delete-button">
+                  <i class="fas fa-trash-alt"></i>
+                </button>
+              </label>
+            </li>
+            <li class="student">
+              <label class="student-label">
+                <span class="student-name">Student 3</span>
+                <button type="button" class="delete-button">
+                  <i class="fas fa-trash-alt"></i>
+                </button>
+              </label>
+            </li>
+            <!-- Add more students as needed -->
+          </ul>
+        </form>
 
-            <button>+ Add Manually</button>
+        <a href="http://127.0.0.1:3000/index1.html"
+          ><button>+ Add Manually</button></a
+        >
+      </div>
+      <div class="attendance-container">
+        <div class="attendance-card">
+          <h2>Scan the QR Code to Mark Attendance</h2>
+          <a href="http://127.0.0.1:3000/index1.html"
+            ><img src="qrcode.png" alt="QR Code" width="200" height="200"
+          /></a>
+          <p class="hint">Please scan the QR code to mark your attendance.</p>
         </div>
-    </div>
-        <div class="attendance-container">
-            <div class="attendance-card">
-                <h2>Scan the QR Code to Mark Attendance</h2>
-                <a href="http://127.0.0.1:3000/index1.html"><img src="qrcode.png" alt="QR Code" width="200" height="200"></a>
-                <p class="hint">Please scan the QR code to mark your attendance.</p>
-            </div>
-        </div>
-        
+      </div>
     </main>
     <footer>
-        <p>&copy; QR Attendance System 2023 - Team Hokage</p>
+      <p>&copy; QR Attendance System 2023 - Team Hokage</p>
     </footer>
-</body>
+  </body>
 </html>
