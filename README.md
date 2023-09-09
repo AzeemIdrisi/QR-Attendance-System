@@ -1,6 +1,6 @@
 # QR Code Attendance System
 
-![QR Code Attendance System](insert_image_url_here)
+![image](https://github.com/AzeemIdrisi/QR-Attendance-System/assets/112647789/dbc0c061-76d0-45bb-b5da-7f4373ffd073)
 
 ## Table of Contents
 
@@ -81,20 +81,21 @@ Before you begin, ensure you have the following prerequisites installed:
 
 ## Screenshots
 
-![Screenshot 1](insert_screenshot_url_here)
+### Admin Page
+![image](https://github.com/AzeemIdrisi/QR-Attendance-System/assets/112647789/e4c9f2d8-6b8e-44de-a63d-f7e5db45383e)
 
-*Insert a brief description of the screenshot.*
+### Student Page
+![image](https://github.com/AzeemIdrisi/QR-Attendance-System/assets/112647789/a8e2f4a7-831c-4ac5-8e1b-c917a9ca9001)
 
-![Screenshot 2](insert_screenshot_url_here)
+### Submission Successful Page
+![image](https://github.com/AzeemIdrisi/QR-Attendance-System/assets/112647789/0f77779e-7648-4356-84c0-7db58b3e786c)
 
-*Insert a brief description of the screenshot.*
-
-## License
-
-This project is licensed under the MIT License. For more information, please refer to the [LICENSE](LICENSE) file.
 
 ## Contributions
 
 We welcome contributions from the community! If you'd like to contribute to this project, please follow our [contribution guidelines](CONTRIBUTING.md).
 
-## Contact
+## Developers
+Created by __Team Hokage__ during __Live The Code 2.0__ Hackathon.
+
+Members : [Mohd Azeem](https://github.com/AzeemIdrisi), [Dheeraj Jha](https://github.com/Dheerajjha451) and [Shantanu Pant](https://github.com/Shanty34)
