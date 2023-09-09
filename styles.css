@@ -38,7 +38,7 @@ main {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   text-align: center;
   width: 30em;
-  height: 80%;
+  height: fit-content;
 }
 .marked-list {
   display: flex;
@@ -58,8 +58,8 @@ main {
 }
 
 .attendance-card img {
-  width: 200px;
-  height: 200px;
+  width: 280px;
+  height: 280px;
   margin: 20px auto;
   display: block;
 }
