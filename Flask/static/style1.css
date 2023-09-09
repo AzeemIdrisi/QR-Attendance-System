@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 650px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -33,7 +33,7 @@ body {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     text-align: center;
     margin-top: 20px;
 }
@@ -69,39 +69,6 @@ body {
     background-color: #e0e0e0;
 }
 
-.checkmark {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 1px solid #0157b3;
-    border-radius: 50%;
-    background-color: transparent;
-    margin-left: 10px;
-    position: relative;
-}
-
-.checkmark:after {
-    content: '';
-    width: 10px;
-    height: 5px;
-    border-bottom: 2px solid #007BFF;
-    border-left: 2px solid #007BFF;
-    transform: rotate(-45deg);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-}
-
-input[type="radio"] {
-    display: none;
-}
-
-input[type="radio"]:checked + .student-label .checkmark:after {
-    display: block;
-}
-
 .submit-button {
     background-color: #007BFF;
     color: #fff;
@@ -126,4 +93,4 @@ input[type="radio"]:checked + .student-label .checkmark:after {
     position: absolute;
     bottom: 0;
     width: 100%;
-} 
+}
