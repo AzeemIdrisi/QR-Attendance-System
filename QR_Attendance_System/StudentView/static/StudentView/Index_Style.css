@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: #0351a5;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.attendance-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.student-list {
+  list-style: none;
+  padding: 0;
+}
+
+.student {
+  margin-bottom: 10px;
+}
+
+.student-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.student-label:hover {
+  background-color: #e0e0e0;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.footer {
+  background-color: #0350a1;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  /* position: absolute; */
+  bottom: 0;
+  width: 100%;
+}

@@ -102,4 +102,4 @@ We welcome contributions from the community! If you'd like to contribute to this
 ## Developers
 Created by __Team Hokage__ during __Live The Code 2.0__ Hackathon.
 
-Members : [Mohd Azeem](https://github.com/AzeemIdrisi), [Dheeraj Jha](https://github.com/Dheerajjha451), [Shantanu Pant](https://github.com/Shanty34) and [Parijat Singh](https://github.com/ParijatSingh26)
+Contributors : [Mohd Azeem](https://github.com/AzeemIdrisi), [Dheeraj Jha](https://github.com/Dheerajjha451), [Shantanu Pant](https://github.com/Shanty34)

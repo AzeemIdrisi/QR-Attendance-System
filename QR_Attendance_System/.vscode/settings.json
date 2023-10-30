@@ -1,0 +1,9 @@
+{
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "emmet.includeLanguages": {
+    "django-html": "html",
+    "jinja-html": "html"
+  }
+}

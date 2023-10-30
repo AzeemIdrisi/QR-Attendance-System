@@ -1,0 +1,163 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define some basic styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+header {
+  background-color: #0056b3;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+main {
+  display: flex;
+  gap: 2em;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.attendance-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 30em;
+  height: fit-content;
+}
+.marked-list {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 30em;
+  height: 80%;
+}
+
+.attendance-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.attendance-card img {
+  width: 280px;
+  height: 280px;
+  margin: 20px auto;
+  display: block;
+}
+
+.hint {
+  font-size: 16px;
+  color: #666;
+}
+
+.present-list {
+  margin: 2em;
+}
+
+/* Add custom scrollbar styles to the form */
+.attendance-form {
+  max-height: 300px; /* Set a maximum height for the form */
+  overflow-y: auto; /* Add vertical scroll when the content exceeds the height */
+  scrollbar-width: thin; /* Create a thin scrollbar (on supported browsers) */
+  scrollbar-color: #000000 transparent; /* Set the scrollbar color */
+}
+
+/* Customize the scrollbar thumb and track */
+.attendance-form::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+}
+
+.attendance-form::-webkit-scrollbar-thumb {
+  background-color: #007bff; /* Set the thumb color */
+}
+
+.attendance-form::-webkit-scrollbar-track {
+  background-color: #ddd; /* Set the track color */
+}
+
+.student-list {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Remove any margin for the list */
+}
+
+.student {
+  margin: 2%;
+}
+
+.student-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 4px 8px; /* Reduce padding to make the delete button smaller */
+  transition: background-color 0.3s ease;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/* Adjust the size of the delete button icon */
+.delete-button {
+  background-color: transparent;
+  border: none;
+  padding: 0; /* Remove padding */
+  font-size: 14px; /* Adjust the font size to control the button size */
+  color: #2275f1;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  color: #1d7ff0;
+}
+
+footer {
+  background-color: #0056b3;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+  main {
+    flex-direction: column;
+  }
+}
+
+.attendance-card-submitted {
+  padding: 20px;
+}
