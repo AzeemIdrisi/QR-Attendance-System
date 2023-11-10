@@ -1,13 +1,11 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QR Attendance System</title>
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='styles.css') }}"
-    />
+    <link rel="stylesheet" href="{% static 'FacultyView/Index_Style.css' %}" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -28,7 +26,9 @@
             {% for student in students %}
             <li class="student">
               <label class="student-label">
-                <span class="student-name">{{ student.name }}</span>
+                <span class="student-name">
+                  {{student.s_roll}} - {{ student.s_fname }} {{student.s_lname}}
+                </span>
                 <button
                   type="submit"
                   name="student_id"
@@ -43,18 +43,19 @@
           </ul>
         </form>
 
-        <a href="{{ url_for('add_manually') }}"
-          ><button>+ Add Manually</button></a
-        >
+        <a href="{% url 'add_manually' %}"><button>+ Add Manually</button></a>
+        <a href="/"><button>✔ Submit</button></a>
       </div>
       <div class="attendance-container">
         <div class="attendance-card">
           <h2>
             Connect to College Wi-Fi and Scan the QR Code to Mark Attendance
           </h2>
-          <a href="{{ url_for('add_manually') }}">
+          {% comment %}
+          <a href="{% url 'add_manually' %}">
+            {% endcomment %}
             <img
-              src="static/qrcode.png"
+              src="{% static 'FacultyView/qrcode.png' %}"
               alt="QR Code"
               width="200"
               height="200"
