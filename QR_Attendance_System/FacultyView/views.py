@@ -30,14 +30,22 @@ def qrgenerator():
 def faculty_view(request):
     qrgenerator()
     students = Student.objects.all().order_by("s_roll")
+    present = []
     return render(
         request,
         "FacultyView/FacultyViewIndex.html",
         {
-            "students": students,
+            "students": present,
         },
     )
 
 
 def add_manually(request):
-    return render(request, "StudentView/StudentViewIndex.html")
+    students = Student.objects.all().order_by("s_roll")
+    return render(
+        request,
+        "StudentView/StudentViewIndex.html",
+        {
+            "students": students,
+        },
+    )
