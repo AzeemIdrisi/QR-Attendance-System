@@ -23,7 +23,7 @@
 
         <form class="attendance-form" method="POST">
           <ul class="student-list">
-            {% for student in students %}
+            {% csrf_token %} {% for student in students %}
             <li class="student">
               <label class="student-label">
                 <span class="student-name">
@@ -32,7 +32,7 @@
                 <button
                   type="submit"
                   name="student_id"
-                  value="{{ student.id }}"
+                  value="{{student.s_roll}}"
                   class="delete-button"
                 >
                   <i class="fas fa-trash-alt"></i>
@@ -42,7 +42,6 @@
             {% endfor %}
           </ul>
         </form>
-
         <a href="{% url 'add_manually' %}"><button>+ Add Manually</button></a>
         <a href="/"><button>✔ Submit</button></a>
       </div>

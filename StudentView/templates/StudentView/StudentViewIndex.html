@@ -16,7 +16,12 @@
     <div class="container">
       <section class="attendance-section">
         <h2 class="section-title">Select Your Name</h2>
-        <form class="attendance-form" method="POST" action="/add_manually_post">
+        <form
+          class="attendance-form"
+          method="POST"
+          action="{% url 'add_manually_post' %}"
+        >
+          {% csrf_token %}
           <ul class="student-list">
             {% for student in students %}
             <li class="student">
@@ -28,7 +33,7 @@
                 <input
                   type="checkbox"
                   class="student-checkbox"
-                  name="{{ student.s_fname }} {{student.s_lname}}"
+                  name="student-name"
                   value="{{student.s_roll}}"
                 />
               </label>

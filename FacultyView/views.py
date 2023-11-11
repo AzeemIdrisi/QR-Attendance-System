@@ -1,7 +1,10 @@
 from django.shortcuts import render
+from django.http import HttpResponseRedirect
+from django.urls import reverse
 from .models import Student
 import qrcode
 import socket
+from StudentView.views import present
 
 
 def qrgenerator():
@@ -28,16 +31,24 @@ def qrgenerator():
 
 
 def faculty_view(request):
-    qrgenerator()
-    students = Student.objects.all().order_by("s_roll")
-    present = []
-    return render(
-        request,
-        "FacultyView/FacultyViewIndex.html",
-        {
-            "students": present,
-        },
-    )
+    if request.method == "POST":
+        student_roll = request.POST["student_id"]
+        print(student_roll)
+        student = Student.objects.get(s_roll=student_roll)
+        print(student)
+        if student in present:
+            present.remove(student)
+        return HttpResponseRedirect(reverse("faculty_view"))
+
+    else:
+        qrgenerator()
+        return render(
+            request,
+            "FacultyView/FacultyViewIndex.html",
+            {
+                "students": present,
+            },
+        )
 
 
 def add_manually(request):
