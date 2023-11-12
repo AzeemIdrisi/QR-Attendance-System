@@ -36,7 +36,7 @@ def faculty_view(request):
         student = Student.objects.get(s_roll=student_roll)
         if student in present:
             present.remove(student)
-        return HttpResponseRedirect("")
+        return HttpResponseRedirect("/")
 
     else:
         qrgenerator()
