@@ -33,12 +33,10 @@ def qrgenerator():
 def faculty_view(request):
     if request.method == "POST":
         student_roll = request.POST["student_id"]
-        print(student_roll)
         student = Student.objects.get(s_roll=student_roll)
-        print(student)
         if student in present:
             present.remove(student)
-        return HttpResponseRedirect(reverse("faculty_view"))
+        return HttpResponseRedirect("")
 
     else:
         qrgenerator()

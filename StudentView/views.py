@@ -12,4 +12,8 @@ def add_manually_post(request):
     student_roll = request.POST["student-name"]
     student = Student.objects.get(s_roll=student_roll)
     present.add(student)
-    return HttpResponseRedirect(reverse("faculty_view"))
+    return HttpResponseRedirect("/submitted")
+
+
+def submitted(request):
+    return render(request, "StudentView/Submitted.html")
