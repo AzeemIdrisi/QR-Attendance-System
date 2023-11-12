@@ -82,8 +82,8 @@ Before you begin, ensure you have the following prerequisites installed:
 
 - Specify Port and Protocol:
 
-- Choose "Specific local ports" and enter the port number your Django server is running on (e.g., 8000).
-- Click "Next."
+   - Choose "Specific local ports" and enter the port number your Django server is running on (e.g., 8000).
+   - Click "Next."
 
 - Choose Action:
 
