@@ -1,6 +1,10 @@
-# QR Code Attendance System
+<div align="center">
+
+# QR Attendance System
 
 ![image](https://github.com/AzeemIdrisi/QR-Attendance-System/assets/112647789/dbc0c061-76d0-45bb-b5da-7f4373ffd073)
+
+</div>
 
 ## Table of Contents
 
