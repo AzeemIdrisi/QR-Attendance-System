@@ -56,7 +56,11 @@ Before you begin, ensure you have the following prerequisites installed:
    ```
 
 
+4. **Install dependencies:**
 
+   ```
+   pip install -r requirements.txt
+   ```
 4. **Run the Django Server:**
 
    ```
